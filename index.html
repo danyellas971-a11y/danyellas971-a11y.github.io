@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Patinhas & Cia – pet shop e clínica veterinária: banho e tosa, consultas, vacinas, hotelzinho e produtos.">
+  <title>Patinhas & Cia | Pet Shop e Clínica Veterinária</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&family=Nunito:wght@400;600;700&display=swap">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cmVjdCB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgcng9IjI0IiBmaWxsPSIjRkZDOTNDIi8+CjxnIGZpbGw9IiMwRjVDNjMiPjxlbGxpcHNlIGN4PSI1MCIgY3k9IjY0IiByeD0iMTkiIHJ5PSIxNSIvPjxjaXJjbGUgY3g9IjI2IiBjeT0iNDQiIHI9IjgiLz48Y2lyY2xlIGN4PSI0MSIgY3k9IjMxIiByPSI4LjUiLz48Y2lyY2xlIGN4PSI1OSIgY3k9IjMxIiByPSI4LjUiLz48Y2lyY2xlIGN4PSI3NCIgY3k9IjQ0IiByPSI4Ii8+PC9nPjwvc3ZnPg==" type="image/svg+xml">
+</head>
+<body>
+
+  <!-- ========== CABEÇALHO ========== -->
+  <header class="cabecalho">
+    <div class="container cabecalho__interno">
+      <a href="#inicio" class="logo" aria-label="Patinhas & Cia – início">
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cmVjdCB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgcng9IjI0IiBmaWxsPSIjRkZDOTNDIi8+CjxnIGZpbGw9IiMwRjVDNjMiPjxlbGxpcHNlIGN4PSI1MCIgY3k9IjY0IiByeD0iMTkiIHJ5PSIxNSIvPjxjaXJjbGUgY3g9IjI2IiBjeT0iNDQiIHI9IjgiLz48Y2lyY2xlIGN4PSI0MSIgY3k9IjMxIiByPSI4LjUiLz48Y2lyY2xlIGN4PSI1OSIgY3k9IjMxIiByPSI4LjUiLz48Y2lyY2xlIGN4PSI3NCIgY3k9IjQ0IiByPSI4Ii8+PC9nPjwvc3ZnPg==" alt="Logotipo Patinhas & Cia: uma patinha" width="44" height="44">
+        <span>Patinhas &amp; Cia</span>
+      </a>
+
+      <button id="btn-menu" class="btn-menu" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="menu" class="menu" aria-label="Navegação principal">
+        <ul>
+          <li><a href="#inicio" class="menu__link">Início</a></li>
+          <li><a href="#sobre" class="menu__link">Sobre</a></li>
+          <li><a href="#servicos" class="menu__link">Serviços</a></li>
+          <li><a href="#galeria" class="menu__link">Galeria</a></li>
+          <li><a href="#contato" class="menu__link">Contato</a></li>
+        </ul>
+      </nav>
+
+      <button id="btn-lista" class="btn-lista" type="button">
+        Minha lista <span id="contador" class="contador">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ========== BANNER / PÁGINA INICIAL ========== -->
+    <section id="inicio" class="hero">
+      <div class="container hero__grade">
+        <div class="hero__texto">
+          <h1>Seu pet bem cuidado, do banho à consulta.</h1>
+          <p>Pet shop e clínica veterinária no mesmo lugar. Agende, compare preços e monte sua lista de serviços em poucos cliques.</p>
+          <div class="hero__botoes">
+            <a href="#servicos" class="botao">Ver serviços e preços</a>
+            <a href="#contato" class="botao botao--contorno">Agendar visita</a>
+          </div>
+        </div>
+        <img class="hero__imagem" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MDAgNjAwIj4KPHJlY3Qgd2lkdGg9IjgwMCIgaGVpZ2h0PSI2MDAiIGZpbGw9IiNGRkUwOEEiLz4KPHRleHQgeD0iNTAlIiB5PSI1NCUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiIGZvbnQtc2l6ZT0iMjMwIiBmb250LWZhbWlseT0iJ1NlZ29lIFVJIEVtb2ppJywnQXBwbGUgQ29sb3IgRW1vamknLCdOb3RvIENvbG9yIEVtb2ppJyxzYW5zLXNlcmlmIj7wn5C28J+QsTwvdGV4dD48L3N2Zz4=" alt="Ilustração de um cachorro e um gato felizes" width="800" height="600">
+      </div>
+    </section>
+
+    <!-- Apresentação rápida -->
+    <section class="destaques" aria-label="Destaques da empresa">
+      <div class="container grade-3">
+        <article class="destaque">
+          <h2>Atendimento 7 dias</h2>
+          <p>Clínica aberta de segunda a domingo, com plantão para urgências.</p>
+        </article>
+        <article class="destaque">
+          <h2>Profissionais certificados</h2>
+          <p>Veterinários e banhistas com formação e carinho de sobra.</p>
+        </article>
+        <article class="destaque">
+          <h2>Busca e entrega</h2>
+          <p>Levamos seu pet até a gente e de volta para casa, sem estresse.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ========== SOBRE A EMPRESA ========== -->
+    <section id="sobre" class="secao">
+      <div class="container">
+        <h2 class="secao__titulo">Sobre a Patinhas &amp; Cia</h2>
+
+        <div class="sobre__grade">
+          <article>
+            <h3>Nossa história</h3>
+            <p>A Patinhas &amp; Cia nasceu em 2026 em Santa Luzia (MG), quando a veterinária Danyella Santana Ferreira transformou uma pequena sala de banho e tosa em um espaço completo de cuidado animal. Hoje atendemos mais de 3 mil famílias e seus pets.</p>
+            <p>Nosso jeito de trabalhar é simples: tratar cada animal como se fosse nosso.</p>
+          </article>
+
+          <aside class="sobre__caixa" aria-label="Missão, visão e valores">
+            <h3>Missão, visão e valores</h3>
+            <dl>
+              <dt>Missão</dt>
+              <dd>Cuidar da saúde e do bem-estar dos pets com carinho e responsabilidade.</dd>
+              <dt>Visão</dt>
+              <dd>Ser a referência em cuidado animal da região.</dd>
+              <dt>Valores</dt>
+              <dd>Amor pelos animais, ética, transparência e atendimento humano.</dd>
+            </dl>
+          </aside>
+        </div>
+
+        <h3 class="subtitulo">Nossos diferenciais</h3>
+        <ul class="diferenciais">
+          <li>Clínica e pet shop no mesmo endereço</li>
+          <li>Banho com produtos hipoalergênicos</li>
+          <li>Fotos do seu pet durante o hotelzinho</li>
+          <li>Lembretes de vacina por WhatsApp</li>
+        </ul>
+
+        <h3 class="subtitulo">Nossa equipe</h3>
+        <div class="grade-3">
+          <article class="pessoa">
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgNDAwIj4KPHJlY3Qgd2lkdGg9IjQwMCIgaGVpZ2h0PSI0MDAiIGZpbGw9IiM5QkUzQjUiLz4KPHRleHQgeD0iNTAlIiB5PSI1NCUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiIGZvbnQtc2l6ZT0iMTcwIiBmb250LWZhbWlseT0iJ1NlZ29lIFVJIEVtb2ppJywnQXBwbGUgQ29sb3IgRW1vamknLCdOb3RvIENvbG9yIEVtb2ppJyxzYW5zLXNlcmlmIj7wn5Gp4oCN4pqV77iPPC90ZXh0Pjwvc3ZnPg==" alt="Ilustração da veterinária Danyella Ferreira" width="400" height="400" loading="lazy">
+            <h4>Dra. Danyella Ferreira</h4>
+            <p>Médica veterinária e fundadora</p>
+          </article>
+          <article class="pessoa">
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgNDAwIj4KPHJlY3Qgd2lkdGg9IjQwMCIgaGVpZ2h0PSI0MDAiIGZpbGw9IiM3RkQxRTgiLz4KPHRleHQgeD0iNTAlIiB5PSI1NCUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiIGZvbnQtc2l6ZT0iMTcwIiBmb250LWZhbWlseT0iJ1NlZ29lIFVJIEVtb2ppJywnQXBwbGUgQ29sb3IgRW1vamknLCdOb3RvIENvbG9yIEVtb2ppJyxzYW5zLXNlcmlmIj7wn6eR4oCN8J+UrDwvdGV4dD48L3N2Zz4=" alt="Ilustração de Jefferson Azevedo" width="400" height="400" loading="lazy">
+            <h4>Dra. Jefferson Azevedo</h4>
+            <p>Clínico geral e vacinação</p>
+          </article>
+          <article class="pessoa">
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgNDAwIj4KPHJlY3Qgd2lkdGg9IjQwMCIgaGVpZ2h0PSI0MDAiIGZpbGw9IiNGRkQzOEEiLz4KPHRleHQgeD0iNTAlIiB5PSI1NCUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiIGZvbnQtc2l6ZT0iMTcwIiBmb250LWZhbWlseT0iJ1NlZ29lIFVJIEVtb2ppJywnQXBwbGUgQ29sb3IgRW1vamknLCdOb3RvIENvbG9yIEVtb2ppJyxzYW5zLXNlcmlmIj7wn5Gp4oCN8J+NszwvdGV4dD48L3N2Zz4=" alt="Ilustração de Camylla Reis" width="400" height="400" loading="lazy">
+            <h4>Camylla Reis</h4>
+            <p>Banho, tosa e hotelzinho</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PRODUTOS E SERVIÇOS ========== -->
+    <section id="servicos" class="secao secao--menta">
+      <div class="container">
+        <h2 class="secao__titulo">Serviços e produtos</h2>
+
+        <div class="busca">
+          <label for="campo-busca">Buscar serviço ou produto</label>
+          <input type="search" id="campo-busca" placeholder="Ex.: banho, ração, vacina">
+        </div>
+
+        <p id="sem-resultado" class="sem-resultado" hidden>Nenhum item encontrado. Tente buscar por "banho" ou "ração".</p>
+
+        <div id="lista-produtos" class="grade-produtos">
+
+          <article class="produto" data-id="1" data-nome="Banho e Tosa" data-preco="60">
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MDAgNDUwIj4KPHJlY3Qgd2lkdGg9IjYwMCIgaGVpZ2h0PSI0NTAiIGZpbGw9IiM3RkQxRTgiLz4KPHRleHQgeD0iNTAlIiB5PSI1NCUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiIGZvbnQtc2l6ZT0iMTkwIiBmb250LWZhbWlseT0iJ1NlZ29lIFVJIEVtb2ppJywnQXBwbGUgQ29sb3IgRW1vamknLCdOb3RvIENvbG9yIEVtb2ppJyxzYW5zLXNlcmlmIj7wn5uBPC90ZXh0Pjwvc3ZnPg==" alt="Ilustração de banho para pets" width="600" height="450" loading="lazy">
+            <div class="produto__corpo">
+              <h3>Banho e Tosa</h3>
+              <p>Banho completo com secagem, corte de unhas e limpeza de ouvidos.</p>
+              <ul><li>Produtos hipoalergênicos</li><li>Duração: 1h30</li></ul>
+              <p class="preco">R$ 60,00</p>
+              <button type="button" class="botao botao--cheio btn-add">Adicionar à lista</button>
+            </div>
+          </article>
+
+          <article class="produto" data-id="2" data-nome="Consulta Veterinária" data-preco="120">
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MDAgNDUwIj4KPHJlY3Qgd2lkdGg9IjYwMCIgaGVpZ2h0PSI0NTAiIGZpbGw9IiM5QkUzQjUiLz4KPHRleHQgeD0iNTAlIiB5PSI1NCUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiIGZvbnQtc2l6ZT0iMTkwIiBmb250LWZhbWlseT0iJ1NlZ29lIFVJIEVtb2ppJywnQXBwbGUgQ29sb3IgRW1vamknLCdOb3RvIENvbG9yIEVtb2ppJyxzYW5zLXNlcmlmIj7wn6m6PC90ZXh0Pjwvc3ZnPg==" alt="Ilustração de consulta veterinária" width="600" height="450" loading="lazy">
+            <div class="produto__corpo">
+              <h3>Consulta Veterinária</h3>
+              <p>Avaliação clínica completa com orientação de tratamento e prevenção.</p>
+              <ul><li>Cães e gatos</li><li>Retorno em até 15 dias</li></ul>
+              <p class="preco">R$ 120,00</p>
+              <button type="button" class="botao botao--cheio btn-add">Adicionar à lista</button>
+            </div>
+          </article>
+
+          <article class="produto" data-id="3" data-nome="Vacinação" data-preco="90">
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MDAgNDUwIj4KPHJlY3Qgd2lkdGg9IjYwMCIgaGVpZ2h0PSI0NTAiIGZpbGw9IiNGRkQzOEEiLz4KPHRleHQgeD0iNTAlIiB5PSI1NCUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiIGZvbnQtc2l6ZT0iMTkwIiBmb250LWZhbWlseT0iJ1NlZ29lIFVJIEVtb2ppJywnQXBwbGUgQ29sb3IgRW1vamknLCdOb3RvIENvbG9yIEVtb2ppJyxzYW5zLXNlcmlmIj7wn5KJPC90ZXh0Pjwvc3ZnPg==" alt="Ilustração de vacina" width="600" height="450" loading="lazy">
+            <div class="produto__corpo">
+              <h3>Vacinação</h3>
+              <p>Vacinas importadas com carteirinha digital e lembrete da próxima dose.</p>
+              <ul><li>V10, antirrábica e gripe</li><li>Aplicação por veterinário</li></ul>
+              <p class="preco">R$ 90,00</p>
+              <button type="button" class="botao botao--cheio btn-add">Adicionar à lista</button>
+            </div>
+          </article>
+
+          <article class="produto" data-id="4" data-nome="Ração Premium 10kg" data-preco="149.90">
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MDAgNDUwIj4KPHJlY3Qgd2lkdGg9IjYwMCIgaGVpZ2h0PSI0NTAiIGZpbGw9IiNGRkIxOTkiLz4KPHRleHQgeD0iNTAlIiB5PSI1NCUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiIGZvbnQtc2l6ZT0iMTkwIiBmb250LWZhbWlseT0iJ1NlZ29lIFVJIEVtb2ppJywnQXBwbGUgQ29sb3IgRW1vamknLCdOb3RvIENvbG9yIEVtb2ppJyxzYW5zLXNlcmlmIj7wn6WjPC90ZXh0Pjwvc3ZnPg==" alt="Ilustração de ração para pets" width="600" height="450" loading="lazy">
+            <div class="produto__corpo">
+              <h3>Ração Premium 10kg</h3>
+              <p>Alimento completo e balanceado para cães adultos de todas as raças.</p>
+              <ul><li>Rico em proteínas</li><li>Sem corantes artificiais</li></ul>
+              <p class="preco">R$ 149,90</p>
+              <button type="button" class="botao botao--cheio btn-add">Adicionar à lista</button>
+            </div>
+          </article>
+
+          <article class="produto" data-id="5" data-nome="Hotel e Creche (diária)" data-preco="80">
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MDAgNDUwIj4KPHJlY3Qgd2lkdGg9IjYwMCIgaGVpZ2h0PSI0NTAiIGZpbGw9IiNDOUI2RjIiLz4KPHRleHQgeD0iNTAlIiB5PSI1NCUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiIGZvbnQtc2l6ZT0iMTkwIiBmb250LWZhbWlseT0iJ1NlZ29lIFVJIEVtb2ppJywnQXBwbGUgQ29sb3IgRW1vamknLCdOb3RvIENvbG9yIEVtb2ppJyxzYW5zLXNlcmlmIj7wn4+oPC90ZXh0Pjwvc3ZnPg==" alt="Ilustração de hotel para pets" width="600" height="450" loading="lazy">
+            <div class="produto__corpo">
+              <h3>Hotel e Creche (diária)</h3>
+              <p>Hospedagem segura com passeios, brincadeiras e monitoramento 24 horas.</p>
+              <ul><li>Ambiente climatizado</li><li>Fotos diárias para o tutor</li></ul>
+              <p class="preco">R$ 80,00</p>
+              <button type="button" class="botao botao--cheio btn-add">Adicionar à lista</button>
+            </div>
+          </article>
+
+          <article class="produto" data-id="6" data-nome="Kit Brinquedos" data-preco="54.90">
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MDAgNDUwIj4KPHJlY3Qgd2lkdGg9IjYwMCIgaGVpZ2h0PSI0NTAiIGZpbGw9IiNGN0UyN0EiLz4KPHRleHQgeD0iNTAlIiB5PSI1NCUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiIGZvbnQtc2l6ZT0iMTkwIiBmb250LWZhbWlseT0iJ1NlZ29lIFVJIEVtb2ppJywnQXBwbGUgQ29sb3IgRW1vamknLCdOb3RvIENvbG9yIEVtb2ppJyxzYW5zLXNlcmlmIj7wn46+PC90ZXh0Pjwvc3ZnPg==" alt="Ilustração de bolinha de brinquedo" width="600" height="450" loading="lazy">
+            <div class="produto__corpo">
+              <h3>Kit Brinquedos</h3>
+              <p>Bolinha, mordedor e corda resistentes para gastar energia e cuidar dos dentes.</p>
+              <ul><li>Material atóxico</li><li>3 peças</li></ul>
+              <p class="preco">R$ 54,90</p>
+              <button type="button" class="botao botao--cheio btn-add">Adicionar à lista</button>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== GALERIA ========== -->
+    <section id="galeria" class="secao">
+      <div class="container">
+        <h2 class="secao__titulo">Galeria dos nossos clientes</h2>
+        <div class="galeria">
+          <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MDAgNDUwIj4KPHJlY3Qgd2lkdGg9IjYwMCIgaGVpZ2h0PSI0NTAiIGZpbGw9IiNGRkQzOEEiLz4KPHRleHQgeD0iNTAlIiB5PSI1NCUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiIGZvbnQtc2l6ZT0iMTkwIiBmb250LWZhbWlseT0iJ1NlZ29lIFVJIEVtb2ppJywnQXBwbGUgQ29sb3IgRW1vamknLCdOb3RvIENvbG9yIEVtb2ppJyxzYW5zLXNlcmlmIj7wn5C2PC90ZXh0Pjwvc3ZnPg==" alt="Cachorro feliz após o banho" width="600" height="450" loading="lazy">
+          <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MDAgNDUwIj4KPHJlY3Qgd2lkdGg9IjYwMCIgaGVpZ2h0PSI0NTAiIGZpbGw9IiNDOUI2RjIiLz4KPHRleHQgeD0iNTAlIiB5PSI1NCUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiIGZvbnQtc2l6ZT0iMTkwIiBmb250LWZhbWlseT0iJ1NlZ29lIFVJIEVtb2ppJywnQXBwbGUgQ29sb3IgRW1vamknLCdOb3RvIENvbG9yIEVtb2ppJyxzYW5zLXNlcmlmIj7wn5CxPC90ZXh0Pjwvc3ZnPg==" alt="Gato descansando no hotelzinho" width="600" height="450" loading="lazy">
+          <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MDAgNDUwIj4KPHJlY3Qgd2lkdGg9IjYwMCIgaGVpZ2h0PSI0NTAiIGZpbGw9IiM5QkUzQjUiLz4KPHRleHQgeD0iNTAlIiB5PSI1NCUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiIGZvbnQtc2l6ZT0iMTkwIiBmb250LWZhbWlseT0iJ1NlZ29lIFVJIEVtb2ppJywnQXBwbGUgQ29sb3IgRW1vamknLCdOb3RvIENvbG9yIEVtb2ppJyxzYW5zLXNlcmlmIj7wn5CwPC90ZXh0Pjwvc3ZnPg==" alt="Coelho em consulta de rotina" width="600" height="450" loading="lazy">
+          <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MDAgNDUwIj4KPHJlY3Qgd2lkdGg9IjYwMCIgaGVpZ2h0PSI0NTAiIGZpbGw9IiM3RkQxRTgiLz4KPHRleHQgeD0iNTAlIiB5PSI1NCUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiIGZvbnQtc2l6ZT0iMTkwIiBmb250LWZhbWlseT0iJ1NlZ29lIFVJIEVtb2ppJywnQXBwbGUgQ29sb3IgRW1vamknLCdOb3RvIENvbG9yIEVtb2ppJyxzYW5zLXNlcmlmIj7wn6acPC90ZXh0Pjwvc3ZnPg==" alt="Papagaio colorido" width="600" height="450" loading="lazy">
+          <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MDAgNDUwIj4KPHJlY3Qgd2lkdGg9IjYwMCIgaGVpZ2h0PSI0NTAiIGZpbGw9IiNGRkIxOTkiLz4KPHRleHQgeD0iNTAlIiB5PSI1NCUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiIGZvbnQtc2l6ZT0iMTkwIiBmb250LWZhbWlseT0iJ1NlZ29lIFVJIEVtb2ppJywnQXBwbGUgQ29sb3IgRW1vamknLCdOb3RvIENvbG9yIEVtb2ppJyxzYW5zLXNlcmlmIj7wn5CV4oCN8J+mujwvdGV4dD48L3N2Zz4=" alt="Cachorro na creche" width="600" height="450" loading="lazy">
+          <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MDAgNDUwIj4KPHJlY3Qgd2lkdGg9IjYwMCIgaGVpZ2h0PSI0NTAiIGZpbGw9IiNGN0UyN0EiLz4KPHRleHQgeD0iNTAlIiB5PSI1NCUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiIGZvbnQtc2l6ZT0iMTkwIiBmb250LWZhbWlseT0iJ1NlZ29lIFVJIEVtb2ppJywnQXBwbGUgQ29sb3IgRW1vamknLCdOb3RvIENvbG9yIEVtb2ppJyxzYW5zLXNlcmlmIj7wn5CIPC90ZXh0Pjwvc3ZnPg==" alt="Gato após a tosa" width="600" height="450" loading="lazy">
+          <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MDAgNDUwIj4KPHJlY3Qgd2lkdGg9IjYwMCIgaGVpZ2h0PSI0NTAiIGZpbGw9IiNGNEI2RDIiLz4KPHRleHQgeD0iNTAlIiB5PSI1NCUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiIGZvbnQtc2l6ZT0iMTkwIiBmb250LWZhbWlseT0iJ1NlZ29lIFVJIEVtb2ppJywnQXBwbGUgQ29sb3IgRW1vamknLCdOb3RvIENvbG9yIEVtb2ppJyxzYW5zLXNlcmlmIj7wn5C5PC90ZXh0Pjwvc3ZnPg==" alt="Hamster em atendimento" width="600" height="450" loading="lazy">
+          <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MDAgNDUwIj4KPHJlY3Qgd2lkdGg9IjYwMCIgaGVpZ2h0PSI0NTAiIGZpbGw9IiM4RkQ2RjAiLz4KPHRleHQgeD0iNTAlIiB5PSI1NCUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiIGZvbnQtc2l6ZT0iMTkwIiBmb250LWZhbWlseT0iJ1NlZ29lIFVJIEVtb2ppJywnQXBwbGUgQ29sb3IgRW1vamknLCdOb3RvIENvbG9yIEVtb2ppJyxzYW5zLXNlcmlmIj7wn5CgPC90ZXh0Pjwvc3ZnPg==" alt="Peixe em aquário" width="600" height="450" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CONTATO ========== -->
+    <section id="contato" class="secao secao--menta">
+      <div class="container contato__grade">
+        <div>
+          <h2 class="secao__titulo">Fale com a gente</h2>
+
+          <form id="form-contato" novalidate>
+            <div class="campo">
+              <label for="nome">Nome</label>
+              <input type="text" id="nome" name="nome" autocomplete="name">
+              <span class="erro" id="erro-nome"></span>
+            </div>
+            <div class="campo">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email" autocomplete="email">
+              <span class="erro" id="erro-email"></span>
+            </div>
+            <div class="campo">
+              <label for="telefone">Telefone</label>
+              <input type="tel" id="telefone" name="telefone" placeholder="(31) 99999-9999" autocomplete="tel">
+              <span class="erro" id="erro-telefone"></span>
+            </div>
+            <div class="campo">
+              <label for="assunto">Assunto</label>
+              <select id="assunto" name="assunto">
+                <option value="">Selecione...</option>
+                <option>Agendar banho e tosa</option>
+                <option>Marcar consulta</option>
+                <option>Hotel e creche</option>
+                <option>Orçamento</option>
+                <option>Outro</option>
+              </select>
+              <span class="erro" id="erro-assunto"></span>
+            </div>
+            <div class="campo">
+              <label for="mensagem">Mensagem</label>
+              <textarea id="mensagem" name="mensagem" rows="5"></textarea>
+              <span class="erro" id="erro-mensagem"></span>
+            </div>
+            <button type="submit" class="botao botao--cheio">Enviar mensagem</button>
+            <p id="msg-sucesso" class="sucesso" role="status" hidden></p>
+          </form>
+        </div>
+
+        <aside class="info" aria-label="Informações de contato">
+          <h3>Onde estamos</h3>
+          <p>Rua da Esperança, 250 – Centro<br>Santa Luzia – MG, 31000-000</p>
+          <p>(31) 00000-0000<br>contato@patinhasecia.com.br</p>
+          <h3>Horário de atendimento</h3>
+          <ul>
+            <li>Segunda a sexta: 8h às 19h</li>
+            <li>Sábado: 8h às 17h</li>
+            <li>Domingo: 9h às 13h</li>
+          </ul>
+          <a class="botao botao--contorno-escuro" href="https://www.google.com/maps" target="_blank" rel="noopener">Ver no mapa</a>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========== LISTA DE INTERESSE (painel lateral) ========== -->
+  <aside id="painel-lista" class="painel" aria-label="Lista de interesse" hidden>
+    <div class="painel__topo">
+      <h2>Minha lista</h2>
+      <button type="button" id="fechar-lista" class="painel__fechar" aria-label="Fechar lista">✕</button>
+    </div>
+    <p id="lista-vazia" class="painel__vazio">Sua lista está vazia. Adicione serviços ou produtos.</p>
+    <ul id="itens-lista" class="itens"></ul>
+    <div class="painel__rodape">
+      <p class="total">Subtotal: <strong id="subtotal">R$ 0,00</strong></p>
+      <button type="button" id="enviar-lista" class="botao botao--cheio">Pedir orçamento</button>
+      <button type="button" id="limpar-lista" class="botao botao--contorno-escuro">Limpar lista</button>
+    </div>
+  </aside>
+
+  <!-- ========== RODAPÉ ========== -->
+  <footer class="rodape">
+    <div class="container rodape__interno">
+      <p>&copy; 2026 Patinhas &amp; Cia. Todos os direitos reservados. | Desenvolvido por Danyella Santana Ferreira</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
